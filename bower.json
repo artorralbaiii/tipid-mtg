@@ -1,0 +1,38 @@
+{
+  "name": "mean_app_template",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andres Jr. III R. Torralba"
+  ],
+  "license": "ISC",
+  "keywords": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+                   maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="description" content="<Application Description>">
+    <meta name="keywords" content="<keywords list here>">
+
+    <title>MEAN App Template</title>
+
+    <!-- build:css styles/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/app.css-->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/src/client/styles/styles.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">MEAN App Template</a>
+            </div>
+        </div>
+    </nav>
+
+    <main data-ng-view class="container"></main>
+
+    <!-- build:js js/lib.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js-->
+    <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/feature1/feature1.module.js"></script>
+    <script src="/src/client/app/core/data.service.js"></script>
+    <script src="/src/client/app/feature1/feature1.controller.js"></script>
+    <script src="/src/client/app/feature1/feature1.route.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:templates:js -->
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+</body>
+
+</html>
