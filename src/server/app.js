@@ -6,6 +6,7 @@ let bodyParser = require('body-parser');
 let logger = require('morgan');
 let compress = require('compression');
 let mongoose = require('mongoose');
+let passport = require('passport');
 
 // Application Packages
 let errHandler = require('./shared/errorHandler')();
@@ -39,6 +40,7 @@ app.use(bodyParser.json());
 app.use(compress());
 app.use(logger('dev'));
 app.use(errHandler.handle);
+app.use(passport.initialize());
 
 // API Router
 var api = require('./api.js')(express);
