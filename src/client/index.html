@@ -25,16 +25,8 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">MEAN App Template</a>
-            </div>
-        </div>
-    </nav>
-
-    <main data-ng-view class="container"></main>
+    <app-header></app-header>
+    <main data-ng-view class="container-fluid"></main>
 
     <!-- build:js js/lib.js -->
     <!-- bower:js -->
@@ -49,10 +41,15 @@
     <!-- inject:js -->
     <script src="/src/client/app/app.module.js"></script>
     <script src="/src/client/app/core/core.module.js"></script>
-    <script src="/src/client/app/feature1/feature1.module.js"></script>
+    <script src="/src/client/app/shared/shared.module.js"></script>
+    <script src="/src/client/app/user/user.module.js"></script>
+    <script src="/src/client/app/core/access.service.js"></script>
+    <script src="/src/client/app/core/auth.service.js"></script>
     <script src="/src/client/app/core/data.service.js"></script>
-    <script src="/src/client/app/feature1/feature1.controller.js"></script>
-    <script src="/src/client/app/feature1/feature1.route.js"></script>
+    <script src="/src/client/app/shared/header.dir.js"></script>
+    <script src="/src/client/app/user/login.controller.js"></script>
+    <script src="/src/client/app/user/register.controller.js"></script>
+    <script src="/src/client/app/user/user.route.js"></script>
     <!-- endinject -->
 
     <!-- inject:templates:js -->

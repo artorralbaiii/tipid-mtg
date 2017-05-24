@@ -5,7 +5,12 @@
         .module('app', [
             /* Shared Modules */
             'app.core',
+            'app.shared',
             /* Feature Modules */
-            'app.feature1'
-        ]);
+            'app.user'
+        ])
+        /* @ngInject */
+        .config(function ($httpProvider) {
+            $httpProvider.interceptors.push('access');
+        });
 })();

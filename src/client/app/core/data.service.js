@@ -8,15 +8,16 @@
 
     function dataservice($http, $log) {
         var service = {
-            hello: hello
+            createUser: createUser,
+            login: login
         };
 
         return service;
 
         /* Implementations */
 
-        function hello() {
-            return $http.get('/api/hello')
+        function createUser(user) {
+            return $http.post('/api/user', user)
                 .then(function (data, status, headers, config) {
                     return data.data;
                 })
@@ -24,5 +25,17 @@
                     $log.error(msg);
                 });
         }
+
+        function login(user) {
+            return $http.post('/api/login', user)
+                .then(function (data, status, headers, config) {
+                    return data.data;
+                })
+                .catch(function (msg) {
+                    $log.error(msg);
+                });
+        }
+
+
     }
 })();
